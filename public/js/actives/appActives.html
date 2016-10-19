@@ -1,0 +1,42 @@
+<div class="icons">
+	<div class="menu products">
+		<div class="actives product" ng-repeat="active in controller.products.active">
+			<div class="product active">
+				<img ng-src="{{active}}"/>
+			</div>
+		</div>
+		<div class="inactives product" ng-repeat="inactive in controller.products.inactive">
+			<div class="product">
+				<img ng-src="{{inactive}}"/>
+			</div>
+		</div>
+	</div>
+	<div class="menu items" ng-repeat="icon in controller.header.icons">
+		<div ng-switch on="icon">
+					    <div class="icon" ng-switch-when="home">
+					        <span class="glyphicon glyphicon-home"></span>
+					    </div>
+					    <div class="icon" ng-switch-when="users">
+					        
+					    </div>
+					    <div class="icon" ng-switch-when="chat">
+					        <span class="glyphicon glyphicon-comment"></span>
+					    </div>
+					    <div class="icon" ng-switch-when="pc">
+					        
+					    </div>
+					    <div class="icon" ng-switch-when="configs">
+					        <span class="glyphicon glyphicon-cog"></span>
+					    </div>
+					    <div class="icon" ng-switch-when="help">
+					       
+					    </div>
+					    <div class="icon" ng-switch-when="user">
+					        <span class="glyphicon glyphicon-user"></span>
+					    </div>
+					    <div class="icon" ng-switch-default>
+					        
+					    </div>
+					</div>
+	</div>
+</div>

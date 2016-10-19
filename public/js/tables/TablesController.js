@@ -23,7 +23,5 @@
             return vm.tables;
           });
       } 
-      
-      console.log(vm);
     }
 })();

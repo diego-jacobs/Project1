@@ -258,10 +258,6 @@
 	border-radius: 2px;
 }
 
-.stat:last-child{
-	display: inline-block;
-	border-right: none;
-}
 
 .tables{
 	margin-top: 10px;

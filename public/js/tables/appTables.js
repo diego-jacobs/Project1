@@ -13,7 +13,7 @@
 		    }, 
 		    templateUrl: 'js/tables/appTables.html',
 			controller: 'TablesController',
-		    controllerAs: 'object',
+		    controllerAs: 'controller',
 		    bindToController: true 
 		};
 		

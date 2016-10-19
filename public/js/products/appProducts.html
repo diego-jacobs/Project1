@@ -1,0 +1,42 @@
+<div class="product-container" ng-repeat="product in controller.products">
+	<div class="description image">
+		<img ng-src="{{product.image}}"/>
+	</div>
+	<div class="description content">
+		<div class="product-title">
+			<div class="col-md-8">
+				{{ product.name }} Stats
+			</div>
+			<div class="col-md-2 button">
+				<button type="button" class="btn btn-primary btn-xs">View Site</button>
+			</div>
+			<div class="col-md-1 tool">
+				<span class="glyphicon glyphicon-wrench"></span>
+			</div>
+			<div class="col-md-1">
+				<span class="glyphicon glyphicon-minus"></span>
+			</div>
+		</div>
+		<div class="product-numbers">
+			<div ng-repeat="field in product.fields">
+				<div class="col-md-2 stat">
+					<div>
+						<div ng-switch on="field.data_type">
+						    <div ng-switch-when="number">
+						        {{ field.value | number }}
+						    </div>
+						    <div ng-switch-when="currency">
+						        {{ field.value | currency:"$":0 }}
+						    </div>
+						    <div ng-switch-default>
+						        {{ field.value }}
+						    </div>
+						</div>
+						<div>
+							{{ field.title }}
+						</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>

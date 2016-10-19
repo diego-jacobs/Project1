@@ -1,4 +1,4 @@
-<div ng-repeat="table in object.tables">
+<div ng-repeat="table in controller.tables">
 	<div class="col-md-6">
 		<div class="table">
 			<div class="table-title">
@@ -24,14 +24,21 @@
 
 			<div class="table-content">
 				<div class="row" ng-repeat="person in table.content.persons">
-					<div class="{{table.head.col1.class}}">
-						{{ person.name }}
-					</div>
-					<div class="{{table.head.col2.class}}">
-						{{ person.lot_number | number }}
-					</div>
-					<div class="{{table.head.col3.class}}">
-						{{ person.amount | currency }}
+					<div ng-repeat="field in person.fields">
+						<div class="{{field.class}}" ng-switch on="field.data_type">
+						    <div ng-switch-when="String">
+						        {{ field.value }}
+						    </div>
+						    <div ng-switch-when="currency">
+						        {{ field.value | currency }}
+						    </div>
+						    <div ng-switch-when="number">
+						        {{ field.value | number }}
+						    </div>
+						    <div ng-switch-default>
+						        <button type="button" class="btn btn-default btn-xs">View</button>
+						    </div>
+						</div>
 					</div>
 				</div>
 			</div>

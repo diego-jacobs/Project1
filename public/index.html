@@ -10,49 +10,7 @@
 	</head>
 	<body ng-app="app">
 		<div class="header">
-			<div class="icons">
-				<div class="two-column-wrapper">
-					<div class="menu products">
-						<div class="actives">
-							<div class="product active">
-								<img src="/img/bidding-for-good.png"/>
-							</div>
-						</div>
-						<div class="product">
-							<img src="/img/first-giving.png"/>
-						</div>
-						<div class="product">
-							<img src="/img/gift-works.png"/>
-						</div>
-						<div class="product">
-							<img src="/img/truist.png"/>
-						</div>
-						<div class="product">
-							<img src="/img/artez.png"/>
-						</div>
-						<div class="product">
-							<img src="/img/argo-fire.png"/>
-						</div>
-					</div>
-					<div class="menu items">
-						<div class="item">
-							<span class="glyphicon glyphicon-home"></span>
-						</div>
-						<div class="item">
-							<span class="glyphicon glyphicon-comment"></span>
-						</div>
-						<div class="item">
-							<span class="glyphicon glyphicon-cog"></span>
-						</div>
-						<div class="item">
-							<span class="glyphicon glyphicon-info-sign"></span>
-						</div>
-						<div class="item">
-							<span class="glyphicon glyphicon-user"></span>
-						</div>
-					</div>
-				</div>
-			</div>
+			<app-actives></app-actives>
 		</div>
 		
 		<div>
@@ -126,27 +84,29 @@
 
 		<!-- Controllers -->
 		<script src="js/company/CompanyController.js"></script>
-		<script src="js/controllers/ProductsController.js"></script>
+		<script src="js/products/ProductsController.js"></script>
 		<script src="js/messages/MessagesController.js"></script>
 		<script src="js/graphics/GraphicsController.js"></script>
 		<script src="js/total/TotalController.js"></script>
 		<script src="js/tables/TablesController.js"></script>
+		<script src="js/actives/ActiveController.js"></script>
 
 		<!-- Directives -->
 		<script src="js/company/appTitle.js"></script>
 		<script src="js/messages/appMessage.js"></script>
-		<script src="js/directives/appProducts.js"></script>
+		<script src="js/products/appProducts.js"></script>
 		<script src="js/graphics/appGraphics.js"></script>
 		<script src="js/tables/appTables.js"></script>
 		<script src="js/total/appTotal.js"></script>
-
+		<script src="js/actives/appActives.js"></script>
 		<!-- Services -->
 		<script src="js/company/companyService.js"></script>
-		<script src="js/services/products.js"></script>
+		<script src="js/products/productsService.js"></script>
 		<script src="js/messages/messagesService.js"></script>
 		<script src="js/graphics/graphicService.js"></script>
 		<script src="js/total/totalService.js"></script>
 		<script src="js/tables/tablesService.js"></script>
+		<script src="js/actives/activeService.js"></script>
 
 	</body>
 </html>

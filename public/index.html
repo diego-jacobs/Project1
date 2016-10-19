@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard</title>
+		<link href="css/style.css" rel="stylesheet">
+		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+		<script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
+
+	</head>
+	<body ng-app="app">
+		<div class="header">
+			<div class="icons">
+				<div class="two-column-wrapper">
+					<div class="menu products">
+						<div class="actives">
+							<div class="product active">
+								<img src="/img/bidding-for-good.png"/>
+							</div>
+						</div>
+						<div class="product">
+							<img src="/img/first-giving.png"/>
+						</div>
+						<div class="product">
+							<img src="/img/gift-works.png"/>
+						</div>
+						<div class="product">
+							<img src="/img/truist.png"/>
+						</div>
+						<div class="product">
+							<img src="/img/artez.png"/>
+						</div>
+						<div class="product">
+							<img src="/img/argo-fire.png"/>
+						</div>
+					</div>
+					<div class="menu items">
+						<div class="item">
+							<span class="glyphicon glyphicon-home"></span>
+						</div>
+						<div class="item">
+							<span class="glyphicon glyphicon-comment"></span>
+						</div>
+						<div class="item">
+							<span class="glyphicon glyphicon-cog"></span>
+						</div>
+						<div class="item">
+							<span class="glyphicon glyphicon-info-sign"></span>
+						</div>
+						<div class="item">
+							<span class="glyphicon glyphicon-user"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div>
+			<div class="title">
+				<app-title></app-title>
+			</div>
+
+			<div class="messages">
+				<app-message></app-message>
+			</div>
+
+			<div class="first-container">
+				<div class="two-column-wrapper">
+					<div class="first-column-wrapper">
+						Admin Dashboard
+					</div>
+					<div class="second-column-wrapper customize">
+						<span class="glyphicon glyphicon-th-large"></span>
+						<a class="link" href="#">Customize Dashboard</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="grey main-container">
+				<div class="total">
+					<app-total></app-total>
+				</div>
+
+				<div class="products-container" ng-controller="ProductsController">
+					<app-products info="products"></app-products>
+				</div>
+
+				<div class="tables-container">
+					<app-tables></app-tables>
+				</div>
+
+				<div class="graphics">
+				<app-graphics></app-graphics>
+				</div>
+
+				<p>Parts of the Dashboard update in <a class="link" href="#">real-time</a> and others <a class="link" href="#">once a day</a></p>
+			</div>
+
+				
+		</div>
+		<div class="second-container">
+			<div class="two-column-wrapper">
+					<div class="first-column-wrapper">
+						<div class="grey">
+							<div>Resources</div>
+							<div><a class="link" href="#">Compare Products</a></div>
+							<div><a class="link" href="#">Help and Support</a></div>
+						</div>
+					</div>
+					<div class="second-column-wrapper">
+						<div class="grey">
+							<div>Announcements & News</div>
+							<div><a class="link" href="#">Product Announcements</a></div>
+							<div><a class="link" href="#">FrontStream News</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			Copyright 2016 FrontStream Holdings, LLC
+		</div>
+		<!-- Modules -->
+		<script src="js/app.js"></script>
+
+		<!-- Controllers -->
+		<script src="js/company/CompanyController.js"></script>
+		<script src="js/controllers/ProductsController.js"></script>
+		<script src="js/messages/MessagesController.js"></script>
+		<script src="js/graphics/GraphicsController.js"></script>
+		<script src="js/total/TotalController.js"></script>
+		<script src="js/tables/TablesController.js"></script>
+
+		<!-- Directives -->
+		<script src="js/company/appTitle.js"></script>
+		<script src="js/messages/appMessage.js"></script>
+		<script src="js/directives/appProducts.js"></script>
+		<script src="js/graphics/appGraphics.js"></script>
+		<script src="js/tables/appTables.js"></script>
+		<script src="js/total/appTotal.js"></script>
+
+		<!-- Services -->
+		<script src="js/company/companyService.js"></script>
+		<script src="js/services/products.js"></script>
+		<script src="js/messages/messagesService.js"></script>
+		<script src="js/graphics/graphicService.js"></script>
+		<script src="js/total/totalService.js"></script>
+		<script src="js/tables/tablesService.js"></script>
+
+	</body>
+</html>

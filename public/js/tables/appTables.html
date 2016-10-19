@@ -1,0 +1,40 @@
+<div ng-repeat="table in object.tables">
+	<div class="col-md-6">
+		<div class="table">
+			<div class="table-title">
+				{{ table.title }}
+			</div>
+			<div class="table-configs">
+				<div class="col-md-10">
+					{{ table.content.title }}
+				</div>
+				<div class="col-md-1 tool">
+					<span class="glyphicon glyphicon-wrench"></span>
+				</div>
+				<div class="col-md-1">
+					<span class="glyphicon glyphicon-minus"></span>
+				</div>
+			</div>
+			
+			<div class="{{table.head.class}}">
+				<div class="{{col.class}}" ng-repeat="col in table.head">
+					{{ col.title }}
+				</div>
+			</div>
+
+			<div class="table-content">
+				<div class="row" ng-repeat="person in table.content.persons">
+					<div class="{{table.head.col1.class}}">
+						{{ person.name }}
+					</div>
+					<div class="{{table.head.col2.class}}">
+						{{ person.lot_number | number }}
+					</div>
+					<div class="{{table.head.col3.class}}">
+						{{ person.amount | currency }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>

@@ -1,0 +1,330 @@
+.header{
+	clear: both;
+	background: rgb(51, 51, 51); 
+	color: #fff;
+	width: 100%;
+}
+
+.icons{
+	width: 90%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.product, .actives{
+	display: inline-block;
+	margin: 10px;
+}
+
+.actives{
+	border-right: 4px solid white;
+	border-radius: 2px;
+	padding-right: 10px;
+}
+
+.line{
+	background: white;
+	width: 4px;
+	height: 41px;
+	border-radius: 2px;
+	margin: 0px;
+}
+
+.menu{
+	display: inline-block;
+}
+
+.items{
+	float: right;
+}
+
+.item{
+	display: inline-block;
+	color: white;
+	margin: 10px;
+	font-size: 30px;
+	line-height: 68px;
+	text-align: center;
+	width: 68px;
+	height: 68px;
+}
+
+.title{
+	width: 90%;
+	margin-left: auto;
+  	margin-right: auto;
+  	clear: both;
+  	border-bottom: 4px solid rgb(221, 221, 221);
+  	border-radius: 2px;
+  	display:block;
+	overflow:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.message{
+	width: 90%;
+	margin-left: auto;
+  	margin-right: auto;
+  	clear: both;
+  	background:rgb(227, 247, 252); 
+  	display:block;
+	overflow:auto;
+	margin-top: 30px;
+	color: black;
+	padding: 10px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+.message p:first-child{
+	font-weight: bold;
+}
+
+.first-container{
+	clear: both;
+	width: 90%;
+	margin-left: auto;
+  	margin-right: auto;
+  	display:block;
+	overflow:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.main-container{
+	color: rgb(51, 51, 51); 
+	width: 90%;
+	margin-left: auto;
+  	margin-right: auto;
+  	clear: both;
+  	display:block;
+	overflow:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.three-colum-container{
+
+}
+
+.link{
+	text-decoration: underline;
+	color: rgb(8, 83, 148);
+}
+.customize{
+	text-align: right;
+	align-content: right;
+}
+
+.grey{
+	background: rgb(238, 238, 238);
+	border: 4px solid rgb(221, 221, 221);
+	border-radius: 2px;
+  	padding: 10px;
+}
+
+.total{
+	margin: 10px;
+	margin-left: auto;
+  	margin-right: auto;
+  	background: #fff;
+	border: 4px solid rgb(221, 221, 221); 
+	border-radius: 2px; 
+	text-align: center;		
+	width: 30%;
+}
+.total-amount{
+	padding: 20px;
+	padding-bottom: 5px;
+	color: #000;
+	font: 200% roboto;
+	font-style: bold;
+}
+.total-title{
+	padding: 20px;
+	padding-top: 0px; 
+	color: rgb(102, 102, 102); ;
+	font: 100% roboto;
+}
+
+.second-container{
+	width: 90%;
+	margin-left: auto;
+  	margin-right: auto;
+  	display:block;
+	overflow:auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.two-column{
+	display: inline-block;
+	width: 45%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding: 10px;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.footer{
+	clear: both;
+	background: rgb(51, 51, 51); 
+	color: #fff;
+	width: 100%;
+	text-align: center;
+}
+
+.two-column-wrapper{
+
+}
+
+.first-column-wrapper,
+  .second-column-wrapper {
+    box-sizing: border-box;
+    float: left;
+    width: 50%; 
+}
+  .first-column-wrapper {
+    padding-right: 5px; 
+}
+  .second-column-wrapper {
+    padding-left: 5px; 
+}
+
+.graphics{
+	display:block;
+	overflow:auto;
+	clear: both;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.three-column-wrapper {
+	display:block;
+	overflow:auto;
+}
+
+.graph{
+	border: 4px solid rgb(221, 221, 221); 
+	border-radius: 2px; 	
+	align-content: center;
+}
+
+.product-container{
+	border: 4px solid rgb(221, 221, 221); 
+	border-radius: 2px; 	
+	display:block;
+	overflow:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: white;
+}
+
+.description{
+	display: inline-block;
+}
+
+
+.content{
+	float: right;
+	width: 91.7%;
+	height: 100%;
+	margin-right: 10px; 
+}
+
+.product-title{
+	padding: 10px;
+	border-bottom: 4px solid rgb(221, 221, 221);
+  	border-radius: 2px;
+  	display:block;
+	overflow:auto;
+}
+
+.product-numbers{
+	padding: 10px;
+  	display:block;
+	overflow:auto;
+	text-align: center;
+}
+
+.stat{
+	display: inline-block;
+	border-right: 4px solid rgb(221, 221, 221);
+	border-radius: 2px;
+}
+
+.stat:last-child{
+	display: inline-block;
+	border-right: none;
+}
+
+.tables{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.table{
+	background: white;
+	height: 200px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.table-title{
+	background: rgb(17, 107, 153);
+	color: white;
+	display:block;
+	overflow:auto;
+	padding: 5px;
+}
+
+.table-configs{
+	display:block;
+	overflow:auto;
+	padding: 5px;
+}
+
+.table-head{
+	background: rgb(238, 238, 238);
+	display:block;
+	overflow:auto;
+	margin: 2px;
+	padding-right: 20px;
+}
+
+.table-head2{
+	background: rgb(238, 238, 238);
+	display:block;
+	overflow:auto;
+	margin: 2px;
+	height: 4px;
+  	border-radius: 2px;
+}
+
+.table-content{
+	margin: 2px;
+	height: 115px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 4px;
+	font-size: 12px;
+}
+
+.row{
+	padding: 2px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+
+.amount{
+	text-align: right;
+}
+
+.lot{
+	text-align: right;
+}

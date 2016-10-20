@@ -8,7 +8,7 @@
 
 	function ActiveController(activeService) {
 		var vm = this; 
-		vm.actives = {};
+		vm.products = {};
 
 		activate();
 
@@ -19,8 +19,8 @@
 	    function getActives() {
 	        return activeService.getActives()
 	            .then(function(data) {
-	                vm.actives = data;
-	                return vm.actives;
+	                vm.products = data;
+	                return vm.products;
 	            });
 	    }
 	}

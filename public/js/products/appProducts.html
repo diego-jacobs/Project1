@@ -18,25 +18,23 @@
 			</div>
 		</div>
 		<div class="product-numbers">
-			<div ng-repeat="field in product.fields">
-				<div class="col-md-2 stat">
+			<div class="col-md-2 stat" ng-repeat="field in product.fields">
+				<div>
+					<div ng-switch on="field.data_type">
+					    <div ng-switch-when="number">
+					        {{ field.value | number }}
+					    </div>
+					    <div ng-switch-when="currency">
+					        {{ field.value | currency:"$":0 }}
+					    </div>
+					    <div ng-switch-default>
+					        {{ field.value }}
+					    </div>
+					</div>
 					<div>
-						<div ng-switch on="field.data_type">
-						    <div ng-switch-when="number">
-						        {{ field.value | number }}
-						    </div>
-						    <div ng-switch-when="currency">
-						        {{ field.value | currency:"$":0 }}
-						    </div>
-						    <div ng-switch-default>
-						        {{ field.value }}
-						    </div>
-						</div>
-						<div>
-							{{ field.title }}
-						</div>
-				</div>
-			</div>	
+						{{ field.title }}
+					</div>
+			</div>
 		</div>
 	</div>
 </div>

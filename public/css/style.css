@@ -3,12 +3,14 @@
 	background: rgb(51, 51, 51); 
 	color: #fff;
 	width: 100%;
+	display:block;
+	overflow:auto;
 }
 
 .icons{
 	width: 90%;
 	margin-left: auto;
-  	margin-right: auto;
+  margin-right: auto;
 }
 
 .product, .actives{
@@ -43,20 +45,24 @@
 	color: white;
 	margin: 10px;
 	font-size: 30px;
-	line-height: 68px;
 	text-align: center;
 	width: 68px;
 	height: 68px;
+	padding-top: 10px;
+}
+.item span{
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .title{
 	width: 90%;
 	margin-left: auto;
-  	margin-right: auto;
-  	clear: both;
-  	border-bottom: 4px solid rgb(221, 221, 221);
-  	border-radius: 2px;
-  	display:block;
+	margin-right: auto;
+	clear: both;
+	border-bottom: 4px solid rgb(221, 221, 221);
+	border-radius: 2px;
+	display:block;
 	overflow:auto;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -204,12 +210,7 @@
 	margin-top: 20px;
 }
 
-.three-column-wrapper {
-	display:block;
-	overflow:auto;
-}
-
-.graph{
+.graphic{
 	border: 4px solid rgb(221, 221, 221); 
 	border-radius: 2px; 	
 	align-content: center;
@@ -258,6 +259,11 @@
 	border-radius: 2px;
 }
 
+.stat:last-child{
+	display: inline-block;
+	border-right: none;
+	border-radius: none;
+}
 
 .tables{
 	margin-top: 10px;

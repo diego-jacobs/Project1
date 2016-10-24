@@ -1,0 +1,55 @@
+<div>
+	<div class="messages">
+		<app-message></app-message>
+	</div>
+
+	<div class="first-container">
+		<div class="col-md-6">
+			Admin Dashboard
+		</div>
+		<div class="col-md-6 customize">
+			<span class="glyphicon glyphicon-th-large"></span>
+			<a class="link" href="#">Customize Dashboard</a>
+		</div>
+	</div>
+
+	<div class="grey main-container">
+		<div class="total">
+			<app-total></app-total>
+		</div>
+
+		<div class="products-container" ng-controller="ProductsController">
+			<app-products info="products"></app-products>
+		</div>
+
+		<div class="tables-container">
+			<app-tables></app-tables>
+		</div>
+
+		<div class="graphics">
+			<app-graphics></app-graphics>
+		</div>
+		
+		<p>Parts of the Dashboard update in <a class="link" href="#">real-time</a> and others <a class="link" href="#">once a day</a></p>
+	</div>
+
+	<div class="second-container">
+		<div class="two-column-wrapper">
+				<div class="first-column-wrapper">
+					<div class="grey">
+						<div>Resources</div>
+						<div><a class="link" href="#">Compare Products</a></div>
+						<div><a class="link" href="#">Help and Support</a></div>
+					</div>
+				</div>
+				<div class="second-column-wrapper">
+					<div class="grey">
+						<div>Announcements & News</div>
+						<div><a class="link" href="#">Product Announcements</a></div>
+						<div><a class="link" href="#">FrontStream News</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

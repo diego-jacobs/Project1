@@ -50,6 +50,7 @@
 	height: 68px;
 	padding-top: 10px;
 }
+
 .item span{
   top: 50%;
   transform: translateY(-50%);
@@ -329,4 +330,69 @@
 
 .lot{
 	text-align: right;
+}
+
+.table-container{
+	background: rgb(238, 238, 238);
+	padding: 4px;
+	display:block;
+	overflow:auto
+}
+
+.crud-table-head{
+	width: 100%;
+	height: 20px;
+	display:block;
+	overflow: auto;
+}
+
+.crud-table-content{
+	background: white;
+	padding: 5px;
+	display:block;
+	overflow:auto
+}
+
+.crud-table-row{
+	border-bottom: 4px solid rgb(221, 221, 221);
+	border-radius: 2px;
+	display:block;
+	overflow:auto;
+}
+
+.crud-table-row:last-child {
+	border-bottom: none;
+	display:block;
+	overflow:auto;
+}
+
+.row-content{
+	padding: 10px;
+	display:block;
+	overflow:auto;
+}
+.crud-table-row-head{
+	display:block;
+	overflow:auto;
+}
+
+.field{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.edit-title{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.edit-field{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.button-container{
+	display: inline-block;
+	font-size: 15px;
 }

@@ -6,76 +6,27 @@
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
 		<script type="text/javascript" src="js/vendor/angular.min.js"></script>
 		<script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
-
+		<script src="js/vendor/d3.js"></script>
+    	<script src="js/vendor/nv.d3.js"></script>
+    	<script src="js/vendor/angular-nvd3.min.js"></script>
+    	<link rel="stylesheet" href="css/nv.d3.css">
 	</head>
 	<body ng-app="app">
 		<div class="header">
-			<app-actives></app-actives>
+			<div class="icons">
+				<app-actives></app-actives>
+				<app-icons></app-icons>
+			</div>
 		</div>
 		
 		<div>
 			<div class="title">
 				<app-title></app-title>
 			</div>
-
-			<div class="messages">
-				<app-message></app-message>
-			</div>
-
-			<div class="first-container">
-				<div class="two-column-wrapper">
-					<div class="first-column-wrapper">
-						Admin Dashboard
-					</div>
-					<div class="second-column-wrapper customize">
-						<span class="glyphicon glyphicon-th-large"></span>
-						<a class="link" href="#">Customize Dashboard</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="grey main-container">
-				<div class="total">
-					<app-total></app-total>
-				</div>
-
-				<div class="products-container" ng-controller="ProductsController">
-					<app-products info="products"></app-products>
-				</div>
-
-				<div class="tables-container">
-					<app-tables></app-tables>
-				</div>
-
-				<div class="graphics">
-				<app-graphics></app-graphics>
-				</div>
-
-				<p>Parts of the Dashboard update in <a class="link" href="#">real-time</a> and others <a class="link" href="#">once a day</a></p>
-			</div>
-
-				
+			
+			<div ng-view></div>
 		</div>
-		<div class="second-container">
-			<div class="two-column-wrapper">
-					<div class="first-column-wrapper">
-						<div class="grey">
-							<div>Resources</div>
-							<div><a class="link" href="#">Compare Products</a></div>
-							<div><a class="link" href="#">Help and Support</a></div>
-						</div>
-					</div>
-					<div class="second-column-wrapper">
-						<div class="grey">
-							<div>Announcements & News</div>
-							<div><a class="link" href="#">Product Announcements</a></div>
-							<div><a class="link" href="#">FrontStream News</a></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
+		
 		<div class="footer">
 			Copyright 2016 FrontStream Holdings, LLC
 		</div>
@@ -90,6 +41,12 @@
 		<script src="js/total/TotalController.js"></script>
 		<script src="js/tables/TablesController.js"></script>
 		<script src="js/actives/ActiveController.js"></script>
+		<script src="js/icons/IconsController.js"></script>
+		<script src="js/pieChart/PieChartController.js"></script>
+		<script src="js/lineChart/LineChartController.js"></script>
+		<script src="js/teamMembers/TeamMembersController.js"></script>
+		<script src="js/pendingMembers/PendingMembersController.js"></script>
+		<script src="js/edit/EditController.js"></script>
 
 		<!-- Directives -->
 		<script src="js/company/appTitle.js"></script>
@@ -99,6 +56,12 @@
 		<script src="js/tables/appTables.js"></script>
 		<script src="js/total/appTotal.js"></script>
 		<script src="js/actives/appActives.js"></script>
+		<script src="js/icons/appIcons.js"></script>
+		<script src="js/pieChart/appPieChart.js"></script>
+		<script src="js/lineChart/appLineChart.js"></script>
+		<script src="js/teamMembers/appTeamMembers.js"></script>
+		<script src="js/pendingMembers/appPendingMembers.js"></script>
+
 		<!-- Services -->
 		<script src="js/company/companyService.js"></script>
 		<script src="js/products/productsService.js"></script>
@@ -107,6 +70,14 @@
 		<script src="js/total/totalService.js"></script>
 		<script src="js/tables/tablesService.js"></script>
 		<script src="js/actives/activeService.js"></script>
+		<script src="js/icons/iconsService.js"></script>
+		<script src="js/pieChart/pieChartService.js"></script>
+		<script src="js/lineChart/lineChartService.js"></script>
+		<script src="js/teamMembers/teamMembersService.js"></script>
+		<script src="js/pendingMembers/pendingMembersService.js"></script>
+
+		<!-- Routes -->
+		<script src="js/config.js"></script>
 
 	</body>
 </html>

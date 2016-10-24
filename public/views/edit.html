@@ -1,0 +1,81 @@
+<div class="main-container">
+	<div class="edit-title">Edit Team Member</div>
+	<div>Update member information below.</div>
+	<div class="edit-field">
+		<div>
+			First Name
+		</div>
+		<div>
+			<input type="text" name="first_name" ng-model="members.member.first_name"/>
+		</div>
+	</div>
+	<div class="edit-field">
+		<div>
+			Last Name
+		</div>
+		<div>
+			<input type="text" name="last_name" ng-model="members.member.last_name"/>
+		</div>
+	</div>
+	<div class="edit-field">
+		<div>
+			User Name
+		</div>
+		<div>
+			<input type="text" name="user_name" ng-model="members.member.username"/>
+		</div>
+	</div>
+	<div class="edit-field">
+		<div>
+			Email Address
+		</div>
+		<div>
+			<input type="text" name="email" ng-model="members.member.email"/>
+		</div>
+	</div>
+	<div class="edit-field">
+		<div>
+			Password
+		</div>
+		<div>
+			<input type="password" name="password" ng-model="members.member.password"/>
+		</div>
+	</div>
+	<div class="edit-field">
+		<div>
+			Confirm Password
+		</div>
+		<div>
+			<input type="password" name="confirm_password" ng-model="members.member.password"/>
+		</div>
+	</div>
+	<div class="edit-field">
+		<input type="checkbox" name="receive_admin_emails" value="false"> Receive Admin Emails<br>
+	</div>
+</div>
+
+<div class="first-container">
+	<div class="edit-title">
+		Member Permissions
+	</div>
+	<div>
+		<div class="edit-field">
+			<input type="checkbox" name="invite" value="false"> Invite Team Mmbers and Edit Permissions
+		</div>
+		<div class="edit-field">
+			<input type="checkbox" name="administrator" value="false"> Administrator
+		</div>
+		<div class="edit-field">
+			<input type="checkbox" name="basic" value="false"> Basic	
+		</div>	
+	</div>
+</div>
+
+<div class="second-container">
+	<div class="button-container">
+		<button type="button" class="btn btn-primary">Save</button>
+	</div>
+	<div class="button-container">
+		<a class="link" href="/#/configurations">Cancel</a>
+	</div>
+</div>

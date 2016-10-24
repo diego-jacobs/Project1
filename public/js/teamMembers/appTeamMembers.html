@@ -1,0 +1,33 @@
+<div class="table-container">
+	<div class="crud-table-head">
+		<div class="col-md-3">
+			User Name
+		</div>
+		<div class="col-md-3">
+			Name
+		</div>
+		<div class="col-md-3">
+			Role
+		</div>
+		<div class="col-md-3 customize">
+		</div>
+	</div>
+	<div class="crud-table-content">
+		<div class="crud-table-row" ng-repeat="member in controller.members">
+			<div class="row-content">
+				<div class="col-md-3">
+					{{ member.username }}
+				</div>
+				<div class="col-md-3">
+					{{ member.first_name }} {{ member.last_name }}
+				</div>
+				<div class="col-md-3">
+					{{ member.role }}
+				</div>
+				<div class="col-md-3 customize">
+					<a class="link" href="#/edit/{{$index}}">Edit</a> | <a class="link" href="#">Delete</a>
+				</div>	
+			</div>		
+		</div>
+	</div>
+</div>	

@@ -9,9 +9,9 @@
 
     function DeleteController($http, $routeParams) {
         var vm = this;
-        console.log(vm);
+        DeleteData();
 
-        vm.DeleteData = function () {
+        function DeleteData() {
 
             var data = $routeParams.id;
 

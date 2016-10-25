@@ -24,7 +24,11 @@
                 LastName: vm.LastName,
                 UserName: vm.UserName,
                 Password: vm.Password,
-                Email: vm.Email
+                ConfirmPassword: vm.ConfirmPassword,
+                Email: vm.Email,
+                ReceiveEmails: vm.ReceiveEmails,
+                Role: vm.Role,
+                Invite: vm.Invite
             };
 
              $http({

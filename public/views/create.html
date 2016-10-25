@@ -46,11 +46,11 @@
 			Confirm Password
 		</div>
 		<div>
-			<input type="password" name="confirm_password" ng-model="member.Password"/>
+			<input type="password" name="confirm_password" ng-model="member.ConfirmPassword"/>
 		</div>
 	</div>
 	<div class="edit-field">
-		<input type="checkbox" name="receive_admin_emails" value="false"> Receive Admin Emails<br>
+		<input type="checkbox" name="receive_admin_emails" ng-model="member.ReceiveEmails"> Receive Admin Emails<br>
 	</div>
 </div>
 
@@ -60,13 +60,13 @@
 	</div>
 	<div>
 		<div class="edit-field">
-			<input type="checkbox" name="invite" value="false"> Invite Team Members and Edit Permissions
+			<input type="checkbox" name="invite" ng-model="member.Invite"> Invite Team Members and Edit Permissions
 		</div>
 		<div class="edit-field">
-			<input type="checkbox" name="administrator" value="false"> Administrator
+			<input type="checkbox" name="administrator" ng-model="member.Role" ng-true-value="'Administrator'" ng-false-value="'Basic'"> Administrator
 		</div>
 		<div class="edit-field">
-			<input type="checkbox" name="basic" value="false"> Basic	
+			<input type="checkbox" name="basic" ng-model="member.Role" ng-true-value="'Basic'" ng-false-value="'Administrator'""> Basic	
 		</div>	
 	</div>
 </div>

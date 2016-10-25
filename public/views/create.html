@@ -1,12 +1,12 @@
 <div class="main-container">
-	<div class="edit-title">Edit Team Member</div>
-	<div>Update member information below.</div>
+	<div class="edit-title">Create Team Member</div>
+	<div>Add member information below.</div>
 	<div class="edit-field">
 		<div>
 			First Name
 		</div>
 		<div>
-			<input type="text" name="first_name" ng-model="members.member.FirstName"/>
+			<input type="text" name="first_name" ng-model="member.FirstName"/>
 		</div>
 	</div>
 	<div class="edit-field">
@@ -14,7 +14,7 @@
 			Last Name
 		</div>
 		<div>
-			<input type="text" name="last_name" ng-model="members.member.LastName"/>
+			<input type="text" name="last_name" ng-model="member.LastName"/>
 		</div>
 	</div>
 	<div class="edit-field">
@@ -22,7 +22,7 @@
 			User Name
 		</div>
 		<div>
-			<input type="text" name="user_name" ng-model="members.member.UserName"/>
+			<input type="text" name="user_name" ng-model="member.UserName"/>
 		</div>
 	</div>
 	<div class="edit-field">
@@ -30,7 +30,7 @@
 			Email Address
 		</div>
 		<div>
-			<input type="text" name="email" ng-model="members.member.Email"/>
+			<input type="text" name="email" ng-model="member.Email"/>
 		</div>
 	</div>
 	<div class="edit-field">
@@ -38,7 +38,7 @@
 			Password
 		</div>
 		<div>
-			<input type="password" name="password" ng-model="members.member.Password"/>
+			<input type="password" name="password" ng-model="member.Password"/>
 		</div>
 	</div>
 	<div class="edit-field">
@@ -46,7 +46,7 @@
 			Confirm Password
 		</div>
 		<div>
-			<input type="password" name="confirm_password" ng-model="members.member.Passord"/>
+			<input type="password" name="confirm_password" ng-model="member.Password"/>
 		</div>
 	</div>
 	<div class="edit-field">
@@ -60,7 +60,7 @@
 	</div>
 	<div>
 		<div class="edit-field">
-			<input type="checkbox" name="invite" value="false"> Invite Team Mmbers and Edit Permissions
+			<input type="checkbox" name="invite" value="false"> Invite Team Members and Edit Permissions
 		</div>
 		<div class="edit-field">
 			<input type="checkbox" name="administrator" value="false"> Administrator
@@ -73,7 +73,7 @@
 
 <div class="second-container">
 	<div class="button-container">
-		<button type="button" class="btn btn-primary">Save</button>
+		<button ng-click="member.InsertData()" class="btn btn-primary">Save</button>
 	</div>
 	<div class="button-container">
 		<a class="link" href="/#/configurations">Cancel</a>

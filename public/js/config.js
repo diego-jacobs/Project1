@@ -18,6 +18,16 @@
                 controllerAs: 'members',
                 templateUrl : "views/edit.html"
             })  
+            .when("/create", {
+                controller: 'CreateController', 
+                controllerAs: 'member',
+                templateUrl : "views/create.html"
+            }) 
+            .when("/delete/:id", {
+                controller: 'DeleteController', 
+                controllerAs: 'member',
+                templateUrl : "views/configurations.html"
+            })
             .otherwise({ 
                 redirectTo: '/' 
             });

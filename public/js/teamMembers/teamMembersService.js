@@ -13,7 +13,7 @@
 		};
 
 		function getMembers(){
-			return $http.get('https://training-d6d75.firebaseio.com/members/team.json')
+			return $http.get('http://localhost:61078/api/member')
 	     		.then(getMembersComplete)
 	     		.catch(getMembersFailed);
 		}

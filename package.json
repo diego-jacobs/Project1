@@ -13,6 +13,7 @@
     "angular-mocks": "^1.5.8",
     "angular-route": "^1.5.8",
     "gulp-connect": "^4.1.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+    "gulp-serve": "^1.4.0"
   }
 }
